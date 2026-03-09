@@ -13,12 +13,10 @@ public class pipe {
     public pipe(int x){
         this.h_botton = MathUtils.random(50, Gdx.graphics.getHeight() - gap - 100);
          this.x = x;
-        // 2. Вычисляем точку начала верхней трубы (Y)
-        // Это высота нижней + зазор
+
         this.y = h_botton + gap;
 
-        // 3. Вычисляем высоту самой верхней трубы
-        // Это общая высота экрана минус точка начала трубы
+
         this.h_top = Gdx.graphics.getHeight() - y;
 
     }
